@@ -1,0 +1,42 @@
+img {
+  float: left;  
+  border-radius: 200px;
+  float: right;
+}
+h1 {
+  color: skyblue;
+  font-family: verdana;
+  font-size: 200%;
+}
+h2,
+h3 {
+  color: gray;
+  font-family: verdana;
+  font-size: 150%;
+}
+h4,
+h5 {
+    color: gray;
+    font-family: verdana;
+    font-size: 125%;
+}
+p {
+  color: gray;
+  font-family: verdana;
+  font-size: 150%;
+}
+ul{
+    width: 50%;
+    color: gray;
+    font-family: verdana;
+    font-size: 100%;
+    border: solid;
+}
+td {  
+  color: gray;
+  font-family: verdana;
+  font-size: 100%;
+  padding: 20px;
+  border: solid;
+  
+}
