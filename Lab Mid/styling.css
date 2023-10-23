@@ -1,0 +1,25 @@
+.list-inline-item img{
+    size: 0.00001px;
+}
+
+.list-inline-item img:hover{
+    size: 1px;
+}
+.nav-link{
+    background-color: #2f720a;
+}
+
+.nav-item a:hover   {
+    color: darkgreen;
+    background-color: transparent; 
+}
+ i{
+    color:green;
+}
+#name{
+    font:bold;
+    font-size: 15;
+}
+#message{
+    color: black;
+}
