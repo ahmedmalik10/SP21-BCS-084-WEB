@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                Used Cars
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+           
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                  New Cars
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+              
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                  Ranges
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+    
+                </ul>
+              </li>
+              <li class="nav-item dropdown px-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"  aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+    
+                </ul>
+              </li>
+          </ul>
+      
+          <form class="d-flex" id="searchForm">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          
+            <div class="d-flex">
+              <a class="btn btn-outline-success" href="/cart">
+                  <i class="bi bi-cart-fill me-1"></i> Cart
+              </a>
+              <a class="btn btn-outline-success" href="/logout"><i class="bi bi-person-fill">Logout</i></a>
+          </div>
+          
+            <a class="btn btn-outline-success " href = '/login'><i class="bi bi-person-fill">Login</i></a>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel-slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./car logo.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>🚗 Welcome to Cars4Show 🚗</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./car logo2.png" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./car logo3.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>🚗 Where Every Car is Just.4.U! 🚗</h3>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+  
+    <div class="container">
+    <hr class="margin">
+    <div class="row">
+      <div class="col-md-7 align-middle">
+        <h1 class="">Tailored Selection: </h1>
+        <p>Our cars are chosen with precision, ensuring a diverse range that caters to all tastes and preferences</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./car symbol.jpg" alt="n" class="img">
+      </div>
+    </div>
+  
+    <hr class="margin">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="./car symbol1.jpg" alt="" class="img">
+      </div>
+      <div class="col-md-7  align-middle">
+        <h1 class="">Customer-Centric Approach: </h1>
+        <p>At Cars4Show, you're not just a customer; you're part of our automotive family. We're committed to your satisfaction every step of the way.</p>
+      </div>
+    </div>
+  
+    <hr class="margin">
+    <div class="row">
+      <div class="col-md-7 align-middle">
+        <h1 class="">Quality Assurance: </h1>
+        <p>Each vehicle undergoes a thorough inspection to guarantee that you're getting a reliable and top-notch ride.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./car symbol2.jpg" alt="" class="img">
+      </div>
+    </div>
+    </div>
+  
+  
+<footer class="text-center text-lg-start bg-dark">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block">
+      <span class="text-white">Get connected with us on social networks...</span>
+    
+      <a href="" class="fa">
+        Facebook
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a href="" class="fa">
+        Twitter(X)
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a href="" class="fa">
+        Google
+        <i class="fa fa-google"></i>
+      </a>
+      <a href="" class="fa">
+        Instagram
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="" class="fa">
+        LinkedIn
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="" class="fa">
+        Github
+        <i class="fa fa-github"></i>
+      </a>
+    </div>
+  </section>
+  
+  <section class="foot1">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" >
+          <h6 class="text-uppercase fw-bold mb-4 mt-2 text-white">
+            <i class="fas fa-gem me-3 text-secondary"></i>Cars 4 Show
+          </h6>
+          
+          <p class="text-white" >
+            At Cars4Show, we believe that finding the perfect car should be an experience tailored just for you. Our mission is to make car shopping a delightful journey, ensuring that every vehicle you explore is handpicked and showcased with you in mind.
+          </p>
+        </div>
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-2">
+          <h6 class="text-uppercase fw-bold mb-4 text-white" >
+            Products
+          </h6>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Fresh Foods</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Frozen Foods</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Beverages</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Grocery Items</a>
+          </p>
+        </div>
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4 mt-2 text-white">
+            Useful links
+          </h6>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Store Locations</a>
+          </p>
+          <p class="text-white">
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-2">
+          <h6 class="text-uppercase fw-bold mb-4 text-white">Contact</h6>
+          <p class="text-white"><i class="fas fa-home me-3 text-secondary"></i>Lahore</p>
+          <p class="text-white">
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            cars4show.4.u@gmail.com
+          </p>
+          <p class="text-white"><i class="fas fa-phone me-3 text-secondary"></i>0900-78601</p>
+          <p class="text-white"><i class="fas fa-print me-3 text-secondary"></i> 03123456789</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
