@@ -1,0 +1,39 @@
+<h1>Calculator Form</h1>
+
+<form class="d-flex" id="searchForm" method="POST">
+
+    <input class="form-control me-2" type="number" placeholder="Operand 1" aria-label="operand1" name="operand1" id="op1">
+    
+    <select class="form-select me-2" aria-label="operator" name="operator" placeholder="Operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="*">*</option>
+    </select>
+    
+    <input class="form-control me-2" type="number" aria-label="operand2"  placeholder="Operand 2" name="operand2" id="op2" >
+
+    <button class="btn btn-outline-success" type="submit">Calculate</button>
+
+</form>
+
+
+
+
+<h2>Previous Results</h2>
+<table class="table table-hover">
+    <tr>
+        <th>Operand 1      </th>
+        <th>Operator      </th>
+        <th>Operand 2      </th>
+        <th>Result         </th>
+    </tr>
+    <% for (let i = 0; i < operations.length; i++) { %>
+        <tr>
+            <td><%= operations[i].operand1 %></td>
+            <td><%= operations[i].operator %></td>
+            <td><%= operations[i].operand2 %></td>
+            <td><%= operations[i].result %></td>
+        </tr>
+    <% } %>
+</table>

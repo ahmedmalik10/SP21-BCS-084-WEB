@@ -1,0 +1,49 @@
+<%=orders.length%>
+<div class="row">
+    <div class="col-4">
+        <% const model_name = "new"; %>
+
+        <a href="/fetch-model/<%= model_name %>" class="btn btn-info w-full"
+            >New Cars</a>
+    </div>
+    <div class="col-4">
+        <a href="#" class="btn btn-info w-full"
+            >Used Cars</a>
+    </div>
+    <div class="col-4">
+        <a href="#" class="btn btn-info w-full"
+            >All Cars</a>
+    </div>        
+</div>
+
+
+
+
+<% for(var i=0;i< cars.length;i++) {%>
+    <div class="row">
+      <div class="col-12"><h3><%=cars[i].title %></h3></div>
+      <div class="col-8">
+        <p class="pl-2">
+          <img
+            src="/images/uploaded/<%=cars[i].image %>"
+            alt="CAR IMAGE"
+            style="float: left; padding: 10px"
+            width="200px"
+          />CAR MODEL: <%=cars[i].model %>
+        </p>
+      </div>
+      <div class="col-4">
+        <a href="/add-cart/<%=cars[i]._id %>" class="btn btn-info w-full"
+          >Add To Cart</a
+        >
+        <dl>
+          <dt>Price</dt>
+          <dd><%=cars[i].price %></dd>
+          <dt>Color</dt>
+          <dd><%=cars[i].color %></dd>
+          <dt>Engine</dt>
+          <dd><%=cars[i].engine %></dd>
+        </dl>
+      </div>
+    </div>
+    <% } %>

@@ -1,0 +1,60 @@
+<a href="/allcars" class="btn btn-info">Continue Shopping</a>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Car Model</th>
+            <th>Price</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <% for(var i=0;i< cars.length;i++) {let carss = cars[i];%>
+            <tr>
+                <td><%=carss.title  %> </td>
+                <td><%=carss.price  %> Rs</td>
+                <td><a href="/remove-cart/<%=cars[i]._id %>" class="btn btn-info w-full"
+                    >Remove from Order</a></td>
+            </tr>
+            <% } %> 
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td><%=total %>000 Rs</td>
+                </tr>
+            </tfoot>
+    </tbody>
+</table>
+
+<% const carsId = []; %>
+<% for(var i=0;i< cars.length;i++) {let carss = cars[i];%>
+    <%  carsId.push(carss._id)%>
+    <% } %>
+<% if(cars.length > 0) {%>
+    <button id="placeOrderButton" class="btn btn-info w-full" style="float: right">Place Order</button>
+
+<script>
+  document.getElementById('placeOrderButton').addEventListener('click', function() {
+    var carsId = '<%= carsId %>'.split(','); // Convert the comma-separated string to an array
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/place-order', true);
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          // Handle the success response if needed
+          console.log('Order placed successfully');
+        } else {
+          // Handle the error response if needed
+          console.error('Error placing order:', xhr.responseText);
+        }
+      }
+    };
+
+    // Send the carsId array in the request body
+    xhr.send(JSON.stringify({ carsId: carsId }));
+  });
+  
+</script>
+
+
+        <% } %>

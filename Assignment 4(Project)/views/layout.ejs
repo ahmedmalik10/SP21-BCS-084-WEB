@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <%-include("./layouts/partials/header") %> <% if(typeof(flash)!="undefined")
+    {%>
+    <div class="alert alert-<%= flash.type %> center-block m-2">
+      <%= flash.message %>
+    </div>
+    <% }%>
+    <div class="container body"><%-body %></div>
+
+    <hr />
+    <footer class="text-center text-lg-start bg-dark">
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span class="text-white">Get connected with us on social networks...</span>
+        
+          <a href="" class="fa">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="" class="fa">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="fa">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="" class="fa">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="fa">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a href="" class="fa">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </section>
+      
+      <section class="foot1">
+        <div class="container text-center text-md-start">
+          <div class="row">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" >
+              <h6 class="text-uppercase fw-bold mb-4 mt-2 text-white">
+                <i class="fas fa-gem me-3 text-secondary"></i>Cars 4 Show
+              </h6>
+              
+              <p class="text-white" >
+                At Cars4Show, we believe that finding the perfect car should be an experience tailored just for you. Our mission is to make car shopping a delightful journey, ensuring that every vehicle you explore is handpicked and showcased with you in mind.
+              </p>
+            </div>
+            
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 mt-2">
+              <h6 class="text-uppercase fw-bold mb-4 text-white" >
+                Products
+              </h6>
+              <p class="text-white">
+                <a href="#!" class="text-reset">New Cars</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Old Cars</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Ranges</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Other Items</a>
+              </p>
+            </div>
+            
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4 mt-2 text-white">
+                Useful links
+              </h6>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Store Locations</a>
+              </p>
+              <p class="text-white">
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+    
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-2">
+              <h6 class="text-uppercase fw-bold mb-4 text-white">Contact</h6>
+              <p class="text-white"><i class="fas fa-home me-3 text-secondary"></i>Lahore</p>
+              <p class="text-white">
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                cars4show.4.u@gmail.com
+              </p>
+              <p class="text-white"><i class="fas fa-phone me-3 text-secondary"></i>0900-78601</p>
+              <p class="text-white"><i class="fas fa-print me-3 text-secondary"></i> 03123456789</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <%- defineContent("footer") %>
+  </body>
+</html>
